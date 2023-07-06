@@ -1,0 +1,25 @@
+{
+  "name": "chunkr",
+  "version": "1.0.0",
+  "description": "Execute commands on large files chunk by chunk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serialfuzzer/chunkr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/serialfuzzer/chunkr/issues"
+  },
+  "homepage": "https://github.com/serialfuzzer/chunkr#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "commander": "^11.0.0",
+    "expand-template": "^2.0.3",
+    "n-readlines": "^1.0.1"
+  }
+}
