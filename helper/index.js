@@ -74,7 +74,7 @@ Helper.prototype = {
             return false;
         }
     },
-    executeCommandsInChunk: async function(fileName) {
+    executeCommandsInChunk: async function(fileName, command) {
         try {
             var i = 0;
             var lineCount = 0;
@@ -82,9 +82,12 @@ Helper.prototype = {
             var subdomains = generatorObject.next()
             while(subdomains.done!=true){
                 var currentChunk = subdomains.value; // list of chunked domains
+                var commandCopy = command;
                 var tempFile = HelperInstance.arrayToFile(currentChunk);
-                var command = `cat ${tempFile} | httpx -t 500 -status-code -title -silent -nc -p https:9200 -o output/{output}_${i}`;
-                var file = await HelperInstance.executeCommandAndSaveAsFile(command);
+                commandCopy = commandCopy.replace('{output}', `{output}_${i}`)
+                commandCopy = expand(commandCopy, { input: tempFile })
+                console.log(commandCopy);
+                var file = await HelperInstance.executeCommandAndSaveAsFile(commandCopy);
                 HelperInstance.deleteFile(tempFile);
                 i++;
                 lineCount += currentChunk.length;
