@@ -16,6 +16,10 @@
     "url": "https://github.com/serialfuzzer/chunkr/issues"
   },
   "homepage": "https://github.com/serialfuzzer/chunkr#readme",
+  "preferGlobal": true,
+  "bin": {
+    "chunkr": "index.js"
+  },
   "dependencies": {
     "axios": "^1.4.0",
     "commander": "^11.0.0",

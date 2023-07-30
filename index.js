@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const cli = require("commander");
 const fs = require("fs");
 const process = require("process");
