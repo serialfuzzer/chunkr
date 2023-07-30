@@ -15,6 +15,12 @@ Through a single command, Chunkr, therefore, offers a highly efficient and versa
 
 # How to install?
 
+
+## Method 1: 
+
+`sudo npm install chunkr -g`
+
+## Method 2:
 `git clone REPO_URL`
 
 `cd REPO_FOLDER`
