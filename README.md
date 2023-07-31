@@ -36,5 +36,9 @@ Command example:
 
 `chunkr -f file.txt -c 'cat {input} | httprobe > {output}' -s 1000`
 
+# To-do
+1. Add concurrency option
+2. Add an option to horizontally scale chunkr, instead of running commands against chunks in one box, chunks will get executed on multiple machines as configured. This will allow any bash command to be scaled easily. 
+
 
 
