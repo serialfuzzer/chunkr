@@ -156,7 +156,7 @@ Helper.prototype = {
                 subdomains = generatorObject.next()
             }
             console.log(`Output saved to ${outputFile}`);
-            return true;
+            return outputFile;
            
         }catch (err){
             throw err;
