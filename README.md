@@ -1,6 +1,7 @@
 ![Demo](https://gcdnb.pbrd.co/images/yj0299PEuIUh.png?o=1)
 
 
+
 # chunkr
 
 Chunkr is a powerful, flexible and efficient tool designed to streamline the process of managing large files by breaking them down into manageable 'chunks' of data.
@@ -13,8 +14,12 @@ In the given example, chunkr -f file.txt -c 'cat {input} | httprobe > {output}' 
 
 Through a single command, Chunkr, therefore, offers a highly efficient and versatile solution for dealing with large files, combining file splitting and command execution into a user-friendly tool. With Chunkr, large file management is no longer a daunting task, but a straightforward, automated process.
 
+
 # How to install?
 
+**Note**
+
+The installation steps below won't work as of now. I'll update the README soon!
 
 ## Method 1: 
 
