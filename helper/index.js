@@ -131,12 +131,12 @@ Helper.prototype = {
             return false;
         }
     },
-    executeCommandsInChunk: async function(fileName, command, chunkSize) {
+    executeCommandsInChunk: async function(fileName, command, chunkSize, output) {
         try {
             CHUNK_SIZE = chunkSize || 1000;
             var i = 0;
             var lineCount = 0;
-            var outputFile = HelperInstance.generateRandomFileName(7) + "_finalOutput.txt";
+            var outputFile = output || HelperInstance.generateRandomFileName(7) + "_finalOutput.txt";
             HelperInstance.createFile(outputFile);
             var generatorObject = HelperInstance.getFileLinesInChunk(fileName);
             var subdomains = generatorObject.next()

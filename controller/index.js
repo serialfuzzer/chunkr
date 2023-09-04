@@ -1,5 +1,3 @@
-const dns = require("dns");
-const axios = require("axios");
 const helper = require("../helper")
 const Controller = function() {}
 
