@@ -29,7 +29,7 @@ Through a single command, Chunkr, therefore, offers a highly efficient and versa
 
 # Update
 
-I have added a new feature in chunkr. This feature has the ability to change the world. You could always point the result of multiple commands into a single file(God bless that single file). Also, now, you can choose to name that file whatever you want using the **-o** flag
+I have added a new feature in chunkr. This feature has the ability to change the world. You could always point the result of multiple commands into a single file(God bless that single file). Also, now, you can choose to name that file whatever you want using the **-o** flag. If you've been using **chunkr** and have been relying on standard output to get the name of the resulting file, your days of pain are over. This is your salvation
 
 
 # How to use?
