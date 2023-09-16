@@ -27,6 +27,10 @@ Through a single command, Chunkr, therefore, offers a highly efficient and versa
 4. `sudo npm install -g`
 
 
+# Update
+
+I have added a new feature in chunkr. This feature has the ability to change the world. You could always point the result of multiple commands into a single file(God bless that single file). Also, now, you can choose to name that file whatever you want using the **-o** flag
+
 
 # How to use?
 
